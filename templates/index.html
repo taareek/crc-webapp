@@ -3,7 +3,8 @@
     <head>
         <meta name="viewport" content="width = device-width, initial-scale = 1.0">
         <title>CRC Detection</title>
-        <link rel="stylesheet" href="style.css">
+        <!-- css  -->
+        <link rel="stylesheet" href="{{ url_for('static', path= '/style.css') }}">
     </head>
     <body>
 
@@ -12,13 +13,14 @@
             <label for="input-file", id="drop-area">
                 <input type="file" accept="image/*", id="input-file" hidden>
                 <div id="img-view">
-                    <img src="uplod_icon.ico">
+                    <img src="./static/uplod_icon.ico">
                     <p>Drag and drop or click here<br> to upload image</p>
                     <span>Upload any images from desktop</span>
                 </div>
             </label>
             <button>Predict</button>
         </div>
-        <script src="script.js"></script>
+        <!-- javascript -->
+        <script src="./static/script.js"></script>
     </body>
 </html>
